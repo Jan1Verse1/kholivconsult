@@ -1,8 +1,8 @@
 import React from 'react';
-import LandingPage from './pages/LandingPage'
-import ContactPage from './pages/contactUs'
-import AboutPage from './pages/aboutUs';
-import PurposePage from './pages/purpose';
+import LandingPage from './pages/LandingPage.jsx'
+import ContactPage from './pages/contactUs.jsx'
+import AboutPage from './pages/aboutUs.jsx';
+import PurposePage from './pages/purpose.jsx';
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 

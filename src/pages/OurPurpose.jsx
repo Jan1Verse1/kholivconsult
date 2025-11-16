@@ -9,6 +9,8 @@ import purpose from "../assets/images/purposeImg.png";
 import { TrendingUp, Users, Target, Award, Heart, Lightbulb } from 'lucide-react';
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import conPurpose from "../assets/images/purpose.jpg";
+import team from "../assets/images/team.jpg";
 
 // Icon component for the chart illustration - MOVED BEFORE PurposePage
 const BarChart3 = ({ className }) => (
@@ -54,7 +56,7 @@ const PurposePage = () => {
         src={purpose}
         alt="Purpose Image"
         title="Our Purpose"
-        height="800px"
+        height="400px"
         overlayOpacity={60}
         textAlign="center"
       />
@@ -185,12 +187,12 @@ const PurposePage = () => {
       </div>
 
       <ImageComponent
-        src={img2}
-        alt="Corporate man smiling"
+        src={team}
+        alt="Corporate team working together"
         className="mb-0"
         objectFit="cover"
         width="100%"
-        height="800px"
+        height="600px"
         rounded={false}
         shadow={false}
         overlay={false}
@@ -201,7 +203,7 @@ const PurposePage = () => {
         {/* Left side - Road Image */}
         <div className="relative h-full">
           <img
-            src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80"
+            src={conPurpose}
             alt="Highway with light trails"
             className="w-full h-full object-cover"
           />
@@ -210,7 +212,7 @@ const PurposePage = () => {
 
         {/* Right side - Contact Text */}
         <Link to="/contact-us" className="h-full">
-          <div className="bg-slate-900 p-3 sm:p-8 md:p-12 flex flex-col justify-center cursor-pointer group hover:bg-slate-800 transition-colors h-full">
+          <div  className="bg-slate-900 p-3 sm:p-8 md:p-12 flex flex-col justify-center cursor-pointer group hover:bg-slate-800 transition-colors h-full">
             <h3 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-1 sm:mb-4">
               Contact Us
             </h3>
@@ -220,7 +222,8 @@ const PurposePage = () => {
 
             {/* Arrow Icon */}
             <div className="flex justify-end">
-              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-orange-500 transition-all duration-300">
+                             <div className="inline-flex items-center justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-slate-900 transition-all duration-300">
+             
                 <ChevronRight className="w-4 h-4 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
             </div>

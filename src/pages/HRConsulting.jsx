@@ -3,6 +3,9 @@ import { ChevronRight, CheckCircle2, ArrowRight, Target, TrendingUp, Users, Doll
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import imgHR from '../assets/images/serviceImg3.png'
+import ImageComponent from '../components/image';
+import cImg1 from "../assets/images/img4.jpg";
+import { Link } from 'react-router';
 
 const HRConsultingPage = () => {
   return (
@@ -25,37 +28,17 @@ const HRConsultingPage = () => {
             <p className="text-2xl mb-10 leading-relaxed">
               Build a strong and productive team through strategic talent management and organizational development.
             </p>
-            <button className="px-10 py-4 bg-gray-900 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg shadow-lg">
-           Contact Us
-            </button>
+            <Link to="/contact-us" className="h-full">
+              <button className="mt-8 px-6 py-3 border-2 border-gray-600 text-gray-900 font-medium rounded flex items-center gap-2 w-fit transition-all duration-300 hover:bg-[#202A35] hover:text-white hover:border-[#2C3846] group">
+                Contact Us
+              </button>
+            </Link> 
           </div>
         </div>
       </div>
 
       <div className=" mx-auto px-4 py-20">
-        {/* Services Carousel Style */}
-        {/* <section className="mb-24">
-          <h2 className="text-5xl font-bold text-center mb-16 text-gray-900">Our Expertise</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: Target, title: "Talent Acquisition", desc: "Effective recruitment and employer branding to attract top candidates.", bg: "#FEEBC8" },
-              { icon: DollarSign, title: "Compensation Design", desc: "Competitive structures that motivate and retain talent.", bg: "#FEEBC8" },
-              { icon: TrendingUp, title: "Performance Management", desc: "Frameworks for goal setting and development.", bg: "#FEEBC8" },
-              { icon: Users, title: "Organizational Development", desc: "Design structures that support business strategy.", bg: "#FEEBC8" },
-              { icon: Lightbulb, title: "Learning & Development", desc: "Training initiatives to enhance skills.", bg: "#FEEBC8" },
-              { icon: Shield, title: "HR Compliance", desc: "Ensure compliance with employment laws.", bg: "#FEEBC8" }
-            ].map((item, idx) => (
-              <div key={idx} className={`bg-${item.bg}-50 p-8 rounded-2xl hover:shadow-xl transition-all hover:-translate-y-1 border-2 border-${item.bg}-100`}>
-                <div className={`w-14 h-14 bg-${item.bg}-500 rounded-full flex items-center justify-center mb-6`}>
-                  <item.icon className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section> */}
-        {/* Services Carousel Style */}
+    
 <section className="mb-24">
   <h2 className="text-5xl font-bold text-center mb-16 text-gray-900">Our Expertise</h2>
   <div className="grid md:grid-cols-3 gap-8">
@@ -85,6 +68,7 @@ const HRConsultingPage = () => {
   </div>
 </section>
 
+
         {/* Approach */}
         <section className="mb-24 bg-gradient-to-br from-[#809AB8] to-amber-50 rounded-3xl p-16">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">How We Help</h2>
@@ -105,6 +89,19 @@ const HRConsultingPage = () => {
             ))}
           </div>
         </section>
+
+         <ImageComponent
+        src={cImg1}
+        alt="Corporate office space"
+        className="mb-24"
+        objectFit="cover"
+        width="100%"
+        height="400px"
+        rounded={false}
+        shadow={false}
+        overlay={false}
+        overlayOpacity={0}
+      />
 
         {/* Benefits */}
         <section className="mb-24">
@@ -132,9 +129,11 @@ const HRConsultingPage = () => {
               <p className="text-xl mb-8 leading-relaxed opacity-95">
                 Let us help you build a team and culture that drives sustainable success.
               </p>
-              <button className="px-8 py-4 bg-white text-[#202A35] font-bold rounded-full hover:bg-gray-100 transition-colors w-full">
-                Start Building Your Team
-              </button>
+              <Link to="/contact-us" className="h-full">
+                <button className="px-8 py-4 bg-white text-[#202A35] font-bold rounded-full hover:bg-gray-100 transition-colors w-full">
+                  Start Building Your Team
+                </button>
+              </Link>
             </div>
           </div>
         </section>

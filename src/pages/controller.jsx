@@ -15,8 +15,10 @@ import {
 } from "lucide-react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import image from "../assets/images/serviceImg.png";
+import image from "../assets/images/audit.jpg";
+import serviceImg from "../assets/images/serviceImg.png";
 import ImageComponent from "../components/image";
+import tImg from "../assets/images/tImg.jpg"
 
 
 
@@ -34,13 +36,10 @@ const ControllershipPage = () => {
             Maintain accurate financial records and strong internal controls
             while you focus on growing your business.
           </p>
-          <button className="px-8 py-4 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-100 transition-colors w-fit flex items-center gap-2">
-            Get Started <ArrowRight className="w-5 h-5" />
-          </button>
         </div>
         <div className="bg-slate-200 hidden md:flex items-center justify-center">
           <FileText className="w-48 h-48 text-slate-400" />
-          <img className="object-cover w-full h-full" src={image} alt="" />
+          <img className="object-cover w-full h-full" src={serviceImg} alt="" />
         </div>
       </div>
 
@@ -83,7 +82,7 @@ const ControllershipPage = () => {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-slate-100"
+                className="bg-gray-100 p-8 rounded-xl  hover:shadow-xl transition-shadow border border-slate-100"
               >
                 <item.icon className="w-12 h-12 text-slate-700 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
@@ -93,7 +92,8 @@ const ControllershipPage = () => {
           </div>
         </section>
 
-        <ImageComponent src={image} alt="Service Image" />
+        <ImageComponent width="100%"
+        height="400px" src={image} alt="Service Image" />
 
         {/* Process Timeline */}
         <section className="mb-20 bg-slate-50 p-12 rounded-2xl">
@@ -134,7 +134,7 @@ const ControllershipPage = () => {
           {/* Left side - Road Image */}
           <div className="relative h-full">
             <img
-              src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80"
+              src={tImg}
               alt="Highway with light trails"
               className="w-full h-full object-cover"
             />
@@ -153,7 +153,7 @@ const ControllershipPage = () => {
 
               {/* Arrow Icon */}
               <div className="flex justify-end">
-                <div className="inline-flex items-center justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-orange-500 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-slate-900 transition-all duration-300">
                   <ChevronRight className="w-4 h-4 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
               </div>

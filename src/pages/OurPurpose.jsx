@@ -8,9 +8,6 @@ import img2 from "../assets/images/Img2.png";
 import purpose from "../assets/images/purposeImg.png";
 
 import { TrendingUp, Users, Target, Award, Heart, Lightbulb } from 'lucide-react';
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import lotties1 from "../assets/images/lotties1.json";
-import lotties2 from "../assets/images/Mission.json";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -50,14 +47,6 @@ const BarChart3 = ({ className }) => (
   </svg>
 );
 
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import lotties1 from "../assets/images/lotties1.json";
-import lotties2 from "../assets/images/Mission.json";
-
-
-import { ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
-
 
 const PurposePage = () => {
   return (
@@ -65,6 +54,7 @@ const PurposePage = () => {
       <Navbar />
       <IntroImages
         src={purpose}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto px-6 py-10">
         <h2 className="text-2xl md:text-3xl lg:text-5xl font-medium text-gray-800 leading-relaxed text-center md:text-left">
           Enterprise Application - The Kholic Way!

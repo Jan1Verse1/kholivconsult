@@ -2,7 +2,7 @@ import React from 'react';
 import LandingPage from './pages/LandingPage.jsx'
 import ContactPage from './pages/contactUs.jsx'
 import AboutPage from './pages/aboutUs.jsx';
-import PurposePage from './pages/Purpose.jsx';
+import PurposePage from './pages/OurPurpose.jsx';
 import ControllershipPage from './pages/controller.jsx';
 import BusinessStrategyPage from './pages/BusinessStrategy.jsx';
 import CapitalRaisingPage from './pages/CapitalRaising.jsx';

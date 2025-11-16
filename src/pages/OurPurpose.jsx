@@ -6,8 +6,10 @@ import Footer from "../components/footer";
 import IntroImages from "../components/IntroImages";
 import img2 from "../assets/images/Img2.png";
 import purpose from "../assets/images/purposeImg.png";
-
 import { TrendingUp, Users, Target, Award, Heart, Lightbulb } from 'lucide-react';
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import lotties1 from "../assets/images/lotties1.json";
+import lotties2 from "../assets/images/Mission.json";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -46,6 +48,8 @@ const BarChart3 = ({ className }) => (
     <circle cx="120" cy="140" r="4" fill="#06B6D4" />
   </svg>
 );
+
+
 
 
 const PurposePage = () => {

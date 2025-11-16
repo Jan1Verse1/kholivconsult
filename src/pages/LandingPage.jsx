@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import HeroSection from '../components/hero'
-import Services from '../components/services'
+import OurServices from '../components/ourServices'
 import ImageComponent from '../components/image'
 import Testimonials from '../components/testimonials'
 import ContactUs from '../components/contact'
@@ -15,7 +15,8 @@ const LandingPage = () => {
     <>
       <Navbar />
       <HeroSection />
-      <Services />
+      <OurServices />
+ 
       <ImageComponent 
         src={Image1}
         alt="Corporate man smiling"

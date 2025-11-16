@@ -7,6 +7,7 @@ import ControllershipPage from './pages/controller.jsx';
 import BusinessStrategyPage from './pages/BusinessStrategy.jsx';
 import CapitalRaisingPage from './pages/CapitalRaising.jsx';
 import HRConsultingPage from './pages/HRConsulting.jsx';
+
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 

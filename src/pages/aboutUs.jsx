@@ -109,7 +109,16 @@ const AboutPage = () => {
         overlayOpacity={0}
       />
         <Testimonials />   
-          <ContactScroll /> 
+          {/* <ContactScroll />  */}
+            <ContactScroll
+        backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+        cardImage="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80"
+        title="Contact Us"
+        description="Do you have any questions or enquiries?"
+        linkTo="/contact-us"
+        borderColor="border-blue-500"
+        buttonHoverColor="group-hover:bg-orange-500"
+      />
       <Footer />
     </>
   );

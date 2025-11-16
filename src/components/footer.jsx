@@ -1,8 +1,35 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import logo from "../assets/images/Logo.png";
+import { useNavigate, Link } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const serviceLinks = [
+    {
+      title: "Controllership & Bookkeeping",
+      link: "/services/controllership-bookkeeping"
+    },
+    {
+      title: "Business & Finance Strategy",
+      link: "/services/business-strategy"
+    },
+    {
+      title: "Capital Raising & Investment",
+      link: "/services/capital-raising"
+    },
+    {
+      title: "HR Consulting",
+      link: "/services/hr-consulting"
+    }
+  ];
+
+  const handleNavigation = (link) => {
+    navigate(link);
+    window.scrollTo(0, 0); // Scroll to top after navigation
+  };
+
   return (
     <footer className="bg-neutral-900 text-white">
       {/* Main Footer Content */}
@@ -11,13 +38,15 @@ const Footer = () => {
           {/* Logo Column */}
           <div>
             <div className="bg-white w-32 h-12 flex items-center justify-center">
-              <span className="text-neutral-900 font-bold text-xl"> <img
-                            src={logo}
-                            alt="Kholiv Logo"
-                            width={180}
-                            height={64}
-                            className="object-contain"
-                          /></span>
+              <span className="text-neutral-900 font-bold text-xl">
+                <Link to="/"><img
+                  src={logo}
+                  alt="Kholiv Logo"
+                  width={180}
+                  height={64}
+                  className="object-contain"
+                /></Link>
+              </span>
             </div>
           </div>
 
@@ -27,38 +56,16 @@ const Footer = () => {
               Our Services
             </h3>
             <ul className="space-y-3">
-              <li>
-                <a 
-                  href="/services/controllership-bookkeeping" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Controllership & Bookkeeping
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/services/business-finance-strategy" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Business & Finance Strategy
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/services/capital-raising-investment" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Capital Raising & Investment
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/services/hr-consulting" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  HR Consulting
-                </a>
-              </li>
+              {serviceLinks.map((service, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => handleNavigation(service.link)}
+                    className="text-gray-300 hover:text-white transition-colors text-left"
+                  >
+                    {service.title}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -153,26 +160,26 @@ const Footer = () => {
 
             {/* Legal Links */}
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <a 
-                href="/privacy-policy" 
+              <button 
+                onClick={() => handleNavigation('/privacy-policy')}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Privacy Policy
-              </a>
+              </button>
               <span className="text-gray-600">|</span>
-              <a 
-                href="/cookie-policy" 
+              <button 
+                onClick={() => handleNavigation('/cookie-policy')}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Cookie Policy
-              </a>
+              </button>
               <span className="text-gray-600">|</span>
-              <a 
-                href="/terms-and-conditions" 
+              <button 
+                onClick={() => handleNavigation('/terms-and-conditions')}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Terms and Conditions
-              </a>
+              </button>
               <span className="text-gray-600">|</span>
               <button 
                 onClick={() => console.log('Revoke cookie consent')}

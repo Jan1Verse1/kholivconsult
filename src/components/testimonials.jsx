@@ -6,7 +6,7 @@ const Testimonials = () => {
 
 const testimonials = [
   {
-    quote: "Partnering with Kholic Consulting Accounting has transformed our financial management process. Their attention to detail and deep understanding of tax regulations have saved us significant costs while keeping us fully compliant.",
+    quote: "Partnering with Kholiv Consulting Accounting has transformed our financial management process. Their attention to detail and deep understanding of tax regulations have saved us significant costs while keeping us fully compliant.",
     author: "Grace Okafor",
     position: "Managing Director, NovaTech Solutions"
   },

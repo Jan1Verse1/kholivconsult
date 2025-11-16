@@ -19,7 +19,10 @@ const HeroSection = () => {
           operations, provide accurate insights, and fuel sustainable business
           growth.
         </p>
-        <button className="px-6 py-3 bg-[#202A35] text-white rounded-xl shadow-md hover:bg-[#2C3846] transition">
+        <button 
+       // className="px-6 py-3 bg-[#202A35] text-white rounded-xl shadow-md hover:bg-[#2C3846] transition"
+        className="mt-8 px-6 py-3 border-2 border-gray-600 text-gray-900 font-medium rounded flex items-center gap-2 w-fit transition-all duration-300 hover:bg-[#202A35] hover:text-white hover:border-[#2C3846] group"
+        >
           Get Started
         </button>
       </div>

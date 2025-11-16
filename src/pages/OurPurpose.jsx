@@ -6,6 +6,50 @@ import Footer from "../components/footer";
 import IntroImages from "../components/IntroImages";
 import img2 from "../assets/images/Img2.png";
 import purpose from "../assets/images/purposeImg.png";
+
+import { TrendingUp, Users, Target, Award, Heart, Lightbulb } from 'lucide-react';
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import lotties1 from "../assets/images/lotties1.json";
+import lotties2 from "../assets/images/Mission.json";
+import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+// Icon component for the chart illustration - MOVED BEFORE PurposePage
+const BarChart3 = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 200 200"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Pie chart segments */}
+    <circle cx="60" cy="80" r="35" fill="#3B82F6" opacity="0.8" />
+    <circle cx="75" cy="80" r="35" fill="#F59E0B" opacity="0.8" />
+    <circle cx="67" cy="95" r="35" fill="#10B981" opacity="0.8" />
+    
+    {/* Bar charts */}
+    <rect x="120" y="100" width="15" height="60" fill="#EF4444" rx="2" />
+    <rect x="140" y="80" width="15" height="80" fill="#8B5CF6" rx="2" />
+    <rect x="160" y="60" width="15" height="100" fill="#EC4899" rx="2" />
+    
+    {/* Line chart */}
+    <polyline 
+      points="20,180 40,160 60,165 80,150 100,155 120,140" 
+      stroke="#06B6D4" 
+      strokeWidth="3" 
+      fill="none"
+      strokeLinecap="round"
+    />
+    {/* Data points */}
+    <circle cx="20" cy="180" r="4" fill="#06B6D4" />
+    <circle cx="40" cy="160" r="4" fill="#06B6D4" />
+    <circle cx="60" cy="165" r="4" fill="#06B6D4" />
+    <circle cx="80" cy="150" r="4" fill="#06B6D4" />
+    <circle cx="100" cy="155" r="4" fill="#06B6D4" />
+    <circle cx="120" cy="140" r="4" fill="#06B6D4" />
+  </svg>
+);
+
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import lotties1 from "../assets/images/lotties1.json";
 import lotties2 from "../assets/images/Mission.json";
@@ -14,20 +58,13 @@ import lotties2 from "../assets/images/Mission.json";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 const PurposePage = () => {
   return (
     <>
       <Navbar />
       <IntroImages
         src={purpose}
-        alt="Support Image"
-        title="Our Purpose"
-        //subtitle="We're here to help you succeed"
-        height="800px"
-        overlayOpacity={60}
-        textAlign="center"
-      />
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto px-6 py-10">
         <h2 className="text-2xl md:text-3xl lg:text-5xl font-medium text-gray-800 leading-relaxed text-center md:text-left">
           Enterprise Application - The Kholic Way!

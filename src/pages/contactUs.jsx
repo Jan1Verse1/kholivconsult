@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import ImageComponent from "../components/image";
+//import ImageComponent from "../components/image";
 import ContactUs from "../components/contact";
 import Footer from "../components/footer";
 import IntroImages from "../components/IntroImages";
-import img2 from"../assets/images/Img2.png";
+//import img2 from"../assets/images/Img2.png";
 import img3 from"../assets/images/img3.png";
 
 
@@ -25,7 +25,7 @@ const ContactPage = () => {
       <div></div>
 
       <ContactUs />
-      <ImageComponent
+      {/* <ImageComponent
         src={img2}
         alt="Corporate man smiling"
         className="mb-0"
@@ -36,7 +36,7 @@ const ContactPage = () => {
         shadow={false}
         overlay={false}
         overlayOpacity={0}
-      />
+      /> */}
       <Footer />
     </>
   );

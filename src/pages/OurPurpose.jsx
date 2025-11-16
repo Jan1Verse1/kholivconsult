@@ -47,14 +47,6 @@ const BarChart3 = ({ className }) => (
   </svg>
 );
 
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import lotties1 from "../assets/images/lotties1.json";
-import lotties2 from "../assets/images/Mission.json";
-
-
-import { ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
-
 
 const PurposePage = () => {
   return (

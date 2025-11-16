@@ -31,7 +31,7 @@ const BusinessStrategyPage = () => {
           alt="Business Image"
           title="Business & Finance Strategy"
           //subtitle="We're here to help you succeed"
-          height="800px"
+          height="600px"
           overlayOpacity={60}
           textAlign="center"
         />

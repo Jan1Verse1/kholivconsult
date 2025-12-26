@@ -104,7 +104,7 @@ const Footer = () => {
           {/* Follow Avetium Column */}
           <div>
             <h3 className="text-lg font-semibold mb-6 uppercase tracking-wider">
-              Follow Avetium
+              Follow Kholiv
             </h3>
             <div className="flex gap-4">
               <a 

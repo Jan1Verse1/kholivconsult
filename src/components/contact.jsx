@@ -107,7 +107,7 @@ const ContactUs = () => {
             <div className="mb-6">
               <a 
                 href="mailto:info@kholivconsulting.com" 
-                className="text-gray-900 text-lg hover:text-orange-500 transition-colors underline"
+                className="text-gray-900 text-lg hover:text-gray-400 transition-colors underline"
               >
                 info@kholivconsulting.com
               </a>
@@ -117,7 +117,7 @@ const ContactUs = () => {
             <div className="mb-8">
               <a 
                 href="tel:+2348032003131" 
-                className="text-gray-900 text-lg hover:text-orange-500 transition-colors"
+                className="text-gray-900 text-lg hover:text-gray-400 transition-colors"
               >
                 +234 803 200 3131
               </a>
@@ -127,21 +127,21 @@ const ContactUs = () => {
             <div className="flex gap-4">
               <a 
                 href="#" 
-                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-orange-500 transition-colors"
+                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-gray-400 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-6 h-6" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-orange-500 transition-colors"
+                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-gray-400 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-6 h-6" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-orange-500 transition-colors"
+                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-gray-400 transition-colors"
                 aria-label="Twitter"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -150,14 +150,14 @@ const ContactUs = () => {
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-orange-500 transition-colors"
+                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-gray-400 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-orange-500 transition-colors"
+                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-gray-400 transition-colors"
                 aria-label="YouTube"
               >
                 <Youtube className="w-6 h-6" />
@@ -225,7 +225,7 @@ const ContactUs = () => {
               {/* Privacy Notice */}
               <p className="text-gray-600 text-sm">
                 Please be informed that when you click the Send button we will process your personal data in accordance with our{' '}
-                <a href="#" className="underline hover:text-orange-500 transition-colors">
+                <a href="#" className="underline hover:text-gray-400 transition-colors">
                   Privacy notice
                 </a>{' '}
                 for the purpose of providing you with appropriate information.

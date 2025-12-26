@@ -17,6 +17,8 @@ import Footer from "../components/footer";
 import IntroImages from "../components/IntroImages";
 import purpose from "../assets/images/purposeImg.png";
 import ContactScroll from "../components/contactScroll";
+import strategy from "../assets/images/strategy.jpg";
+import office from "../assets/images/office.jpg";
 
 // Design 2: Business Strategy - Modern Card Layout
 const BusinessStrategyPage = () => {
@@ -29,7 +31,7 @@ const BusinessStrategyPage = () => {
           alt="Business Image"
           title="Business & Finance Strategy"
           //subtitle="We're here to help you succeed"
-          height="800px"
+          height="600px"
           overlayOpacity={60}
           textAlign="center"
         />
@@ -125,13 +127,13 @@ const BusinessStrategyPage = () => {
           </section>
 
           <ContactScroll
-            backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
-            cardImage="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80"
+            backgroundImage={office}
+            cardImage={strategy}
             title="Transform Your Business Strategy"
             description="Data-driven decisions. Clear roadmaps. Sustainable growth."
             linkTo="/contact-us"
             borderColor="border-blue-500"
-            buttonHoverColor="group-hover:bg-orange-500"
+            buttonHoverColor="group-hover:bg-slate-900"
           />
         </div>
       </div>

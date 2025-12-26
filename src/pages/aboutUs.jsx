@@ -6,15 +6,14 @@ import Footer from "../components/footer";
 import IntroImages from "../components/IntroImages";
 import img2 from "../assets/images/Img2.png";
 import purpose from "../assets/images/purposeImg.png";
-import Lottie from "lottie-react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import lottie1 from "../assets/images/lottie1.webm";
 import lotties1 from "../assets/images/lotties1.json";
 import lotties2 from "../assets/images/Mission.json";
 import OurValues from "../components/values";
 import ContactScroll from "../components/contactScroll";
 import Testimonials from "../components/testimonials";
+import typeImg from "../assets/images/typewriter.jpg";
+import supportImg from "../assets/images/contactus.jpg";
 
 const AboutPage = () => {
   return (
@@ -25,7 +24,7 @@ const AboutPage = () => {
         alt="Support Image"
         title="Kholiv Consult"
         //subtitle="We're here to help you succeed"
-        height="800px"
+        height="600px"
         overlayOpacity={60}
         textAlign="center"
       />
@@ -111,13 +110,13 @@ const AboutPage = () => {
         <Testimonials />   
           {/* <ContactScroll />  */}
             <ContactScroll
-        backgroundImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
-        cardImage="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80"
+        backgroundImage={typeImg}
+        cardImage={supportImg}
         title="Contact Us"
         description="Do you have any questions or enquiries?"
         linkTo="/contact-us"
-        borderColor="border-blue-500"
-        buttonHoverColor="group-hover:bg-orange-500"
+       borderColor="border-blue-500"
+            buttonHoverColor="group-hover:bg-slate-900"
       />
       <Footer />
     </>

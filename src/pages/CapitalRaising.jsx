@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Testimonials from '../components/testimonials';
+import capital from "../assets/images/capital.jpg";
 
-// Design 3: Capital Raising - Bold Asymmetric Layout
+
+
 const CapitalRaisingPage = () => {
   return (
     <>
@@ -96,8 +98,8 @@ const CapitalRaisingPage = () => {
           {/* Left side - Road Image */}
           <div className="relative h-full">
             <img
-              src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80"
-              alt="Highway with light trails"
+              src={capital}
+              alt="Money and investment"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent" />
@@ -115,7 +117,7 @@ const CapitalRaisingPage = () => {
 
               {/* Arrow Icon */}
               <div className="flex justify-end">
-                <div className="inline-flex items-center justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-orange-500 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-8 h-8 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/10 backdrop-blur-sm rounded-full group-hover:bg-slate-900 transition-all duration-300">
                   <ChevronRight className="w-4 h-4 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
               </div>
@@ -123,16 +125,7 @@ const CapitalRaisingPage = () => {
           </Link>
         </div>
 
-        {/* CTA */}
-        {/* <div className="bg-gray-900 rounded-3xl p-16 text-center text-white">
-          <h2 className="text-4xl font-bold mb-6">Ready to Raise Capital?</h2>
-          <p className="text-xl mb-10 text-gray-300 max-w-2xl mx-auto">
-            Let's discuss your funding needs and create a winning strategy.
-          </p>
-          <button className="px-12 py-5 bg-emerald-500 text-white font-bold rounded-lg hover:bg-emerald-600 transition-colors text-lg">
-            Schedule Discovery Call
-          </button>
-        </div> */}
+   
       </div>
     </div>
     <Footer />

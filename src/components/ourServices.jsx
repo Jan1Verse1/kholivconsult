@@ -73,15 +73,15 @@ const OurServices = () => {
 
           {/* Content Section */}
           <div className="w-full md:w-1/2 bg-blue-50 p-8 md:p-12 h-64 md:h-80 flex flex-col justify-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-2xl font-bold text-gray-900 mb-2 ">
               {section.title}
             </h2>
-            <p className="text-gray-700 text-base md:text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed">
               {section.description}
             </p>
             <button
               onClick={() => navigate(section.link)} // ✅ Use navigate instead
-              className="mt-8 px-6 py-3 border-2 border-gray-600 text-gray-900 font-medium rounded flex items-center gap-2 w-fit transition-all duration-300 hover:bg-[#202A35] hover:text-white hover:border-[#2C3846] group"
+              className="mt-4 px-6 py-3 border-2 border-gray-600 text-gray-900 font-medium rounded flex items-center gap-2 w-fit transition-all duration-300 hover:bg-[#202A35] hover:text-white hover:border-[#2C3846] group"
             >
               Learn More
               <ChevronRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
